@@ -1,0 +1,77 @@
+---
+output: github_document
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "",
+  fig.path = "README-"
+)
+```
+
+# presidential_election_county_results_2016
+presidential_election_county_results_2016
+
+tidy election results updated 11/13/2016
+
+the two files are identical. different names provided for continuity.
+
+***UPDATED JAN 3, 2018***
+
+## Data
+
+Find the most up-to-date version of the data as a CSV or RDS (R data file) in the data directory.
+
+### Long format
+
+[Long format as .csv](data/pres.elect16.results.2018.csv): ./data/pres.elect16.results.2018.csv
+
+```{r}
+## long format CSV
+readr::read_csv("data/pres.elect16.results.2018.csv")
+```
+
+[Long format as .rds](data/pres.elect16.results.2018.rds): ./data/pres.elect16.results.2018.rds
+
+```{r}
+## wide vote share data RDS
+readr::read_rds("data/pres.elect16.results.2018.rds")
+```
+
+
+## Wide format - vote share
+
+[Wide format vote share in
+.csv](data/pres.elect16.results.wide.pct.2018.csv): ./data/pres.elect16.results.wide.pct.2018.csv
+
+```{r}
+## wide vote share data CSV
+readr::read_csv("data/pres.elect16.results.wide.pct.2018.csv")
+```
+
+[Wide format vote share in
+.rds](data/pres.elect16.results.wide.pct.2018.rds): ./data/pres.elect16.results.wide.pct.2018.rds
+
+```{r}
+## wide vote share data RDS
+readr::read_rds("data/pres.elect16.results.wide.pct.2018.rds")
+```
+
+## Wide Format - total votes
+
+[Wide format total votes in
+.csv](data/pres.elect16.results.wide.votes.2018.csv): ./data/pres.elect16.results.wide.pct.2018.csv
+
+```{r}
+## wide vote totals data CSV
+readr::read_csv("data/pres.elect16.results.wide.votes.2018.csv")
+```
+
+[Wide format total votes in
+.rds](data/pres.elect16.results.wide.votes.2018.rds): ./data/pres.elect16.results.wide.pct.2018.rds
+
+```{r}
+## wide vote share data RDS
+readr::read_rds("data/pres.elect16.results.wide.votes.2018.rds")
+```
